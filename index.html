@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ative Imóveis</title>
+    
+    <!-- Fonts Family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Plugins Links -->
+    <link rel="stylesheet" href="src/assets/vendor/slick/css/slick.css">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="src/assets/css/normalize.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/navbar/style.css" />
+    <link rel="stylesheet" href="src/assets/css/homepage/style.css" />
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <img lazy="loading" src="src/assets/img/logotipo.png" alt="Logotipo | Ative Imóveis" />
+            <input type="text" id="search_property" placeholder="Procure seu imóvel por aqui!"/>
+            <ul>
+                <a href="/" class="paragraphy-4 active-navlink"><li>Home</li></a>
+                <a href="/properties.html" class="paragraphy-4"><li>Imóveis</li></a>
+                <a href="/plans.html" class="paragraphy-4"><li>Planos</li></a>
+            </ul>
+            <div class="group-button">
+                <a href="#" class="button-4 login-popup">Login</a>
+                <a href="#" class="button-primary register button-4">Cadastrar</a>
+            </div>
+        </div>
+    </nav>
+    <div class="box-menus-mobile">
+        <div class="menus-mobile">
+            <ul>
+                <a href="">
+                    <li class="active">
+                        <span class="material-icons-outlined">home</span>
+                        <p class="paragraphy-6">Home</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/properties.html">
+                    <li>
+                        <span class="material-icons-outlined">business</span>
+                        <p class="paragraphy-6">Imóveis</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/plans.html">
+                    <li>
+                        <span class="material-icons-outlined">account_balance_wallet</span>
+                        <p class="paragraphy-6">Planos</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/plans.html">
+                    <li>
+                        <span class="material-icons-outlined">account_circle</span>
+                        <p class="paragraphy-6">Entrar</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <aside id="popup">
+        <div class="box-popup-login">
+            <h4>Faça seu login</h4>
+            <span class="material-icons close">close</span>
+
+            <form action="">
+                <div class="input-item">
+                    <label for="email" class="paragraphy-4">E-mail:</label>
+                    <input type="email" id="email" />
+                </div>
+                <div class="input-item">
+                    <label for="password" class="paragraphy-4">Password:</label>
+                    <input type="password" id="password" />
+                </div>
+                <a href="#" class="paragraphy-4">Esqueci minha senha</a>
+                <button class="button-primary button-4">Continuar o login</button>
+                <div class="redirect-register">
+                    <p class="paragraphy-4">Não tem conta?</p>
+                    <a class="paragraphy-4" href="/register-user-step-1.html">Fazer uma conta</a>
+                </div>
+            </form>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <div class="container">
+                <div class="description-header">
+                    <h1>Anuncie seu imóvel com segurança</h1>
+                    <p>Vender, alugar e negociar tudo em só um lugar</p>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="search">
+                    <div class="group-input">
+                        <label class="paragraphy-2" for="interest">Interesse</label>
+                        <select name="" id="interest">
+                            <option value="buy">Comprar</option>
+                            <option value="sell">Vender</option>
+                            <option value="rent">Alugar</option>
+                        </select>
+                    </div>
+                    <div class="group-input">
+                        <label class="paragraphy-2" for="property-type">Tipo de Imóvel</label>
+                        <select name="" id="property-type">
+                            <option value="">Todos os imóveis</option>
+                        </select>
+                    </div>
+                    <div class="group-input">
+                        <label class="paragraphy-2" for="location">Localização</label>
+                        <input id="location" type="text" placeholder="Ex: Av. Cursino"/>
+                    </div>
+                    <div class="group-input">
+                        <label class="paragraphy-2" for="filter">Filtrar</label>
+                        <div class="dropbox-filter">
+                            <button class="button-tercery">
+                                <span class="material-icons">filter_list</span>
+                            </button>
+<!-- 
+                            <div class="dropbox-list search-section">
+                                <h5>iodjwaiodjwio</h5>
+                            </div> -->
+                        </div>
+                    </div>
+                    <button class="button-primary"><span class="material-icons">search</span></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="title-section mb-100">Imóveis da sua Região</h2>
+                <div class="list-property">
+                    <ul class="slide slide-home">
+                        <li>
+                            <a href="">
+                                <div class="property-box">
+                                    <div class="image-property">
+                                        <img src="src/assets/img/temp/image-property.png" alt="">
+                                    </div>
+                                    <div class="description-property">
+                                        <div class="property-type-tags">
+                                            <a href="#" class="paragraphy-6">Apartamento</a>
+                                        </div>
+                                        <p class="title paragraphy-4">Apartamento em vila ema</p>
+                                        <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                        <div class="price">
+                                            <span class="paragraphy-5">R$</span>
+                                            <p class="paragraphy-3">60.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="property-box">
+                                    <div class="image-property">
+                                        <img src="src/assets/img/temp/image-property.png" alt="">
+                                    </div>
+                                    <div class="description-property">
+                                        <div class="property-type-tags">
+                                            <a href="#" class="paragraphy-6">Apartamento</a>
+                                        </div>
+                                        <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                        <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                        <div class="price">
+                                            <span class="paragraphy-5">R$</span>
+                                            <p class="paragraphy-3">60.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="property-box">
+                                    <div class="image-property">
+                                        <img src="src/assets/img/temp/image-property.png" alt="">
+                                    </div>
+                                    <div class="description-property">
+                                        <div class="property-type-tags">
+                                            <a href="#" class="paragraphy-6">Apartamento</a>
+                                        </div>
+                                        <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                        <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                        <div class="price">
+                                            <span class="paragraphy-5">R$</span>
+                                            <p class="paragraphy-3">60.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="property-box">
+                                    <div class="image-property">
+                                        <img src="src/assets/img/temp/image-property.png" alt="">
+                                    </div>
+                                    <div class="description-property">
+                                        <div class="property-type-tags">
+                                            <a href="#" class="paragraphy-6">Apartamento</a>
+                                        </div>
+                                        <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                        <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                        <div class="price">
+                                            <span class="paragraphy-5">R$</span>
+                                            <p class="paragraphy-3">60.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="property-box">
+                                    <div class="image-property">
+                                        <img src="src/assets/img/temp/image-property.png" alt="">
+                                    </div>
+                                    <div class="description-property">
+                                        <div class="property-type-tags">
+                                            <a href="#" class="paragraphy-6">Apartamento</a>
+                                        </div>
+                                        <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                        <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                        <div class="price">
+                                            <span class="paragraphy-5">R$</span>
+                                            <p class="paragraphy-3">60.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container padding-section">
+                <h2 class="title-section mb-100">Mais Visualizados</h2>
+                <div class="slide-home-views">
+                    <div class="property-views">
+                        <div class="group-property-view">
+                            <div class="image-property-views">
+                                <img src="src/assets/img/temp/image-more-views.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="group-property-view">
+                            <div class="description-property-views">
+                                <a href="#"><h3>Apartamento em vila ema</h3></a>
+                                <div class="property-type-tags">
+                                    <a href="#" class="paragraphy-2">Apartamento</a>
+                                </div>
+                                <hr />
+                                <div class="location-property">
+                                    <p class="paragraphy-5">São Sebastião, São Paulo, Brasil</p>
+                                </div>
+                                <hr />
+                                <p class="description paragraphy-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent 
+                                    tincidunt sollicitudin dolor, in viverra massa scelerisque nec. 
+                                    Nullam eget nisi sapien. Nunc varius leo mauris, a ultrices felis ultrices 
+                                    id. Phasellus in tincidunt ex, a tristique... 
+                                </p>
+                                <hr />
+                                <div class="rooms">
+                                    <span>1 Quarto</span>
+                                    <span>1 Suíte</span>
+                                    <span>1 Area útil</span>
+                                    <span>1 Banheiro</span>
+                                </div>
+                                <hr />
+                                <div class="price">
+                                    <span>R$</span>
+                                    <p class="paragraphy-big">60.000</p>
+                                </div>
+                                <a href="" class="button-tercery button-4">Ver mais sobre</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="property-views">
+                        <div class="group-property-view">
+                            <div class="image-property-views">
+                                <img src="src/assets/img/temp/image-more-views.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="group-property-view">
+                            <div class="description-property-views">
+                                <a href="#"><h3>Apartamento em vila ema</h3></a>
+                                <div class="property-type-tags">
+                                    <a href="#" class="paragraphy-2">Apartamento</a>
+                                </div>
+                                <hr />
+                                <div class="location-property">
+                                    <p class="paragraphy-5">São Sebastião, São Paulo, Brasil</p>
+                                </div>
+                                <hr />
+                                <p class="description paragraphy-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent 
+                                    tincidunt sollicitudin dolor, in viverra massa scelerisque nec. 
+                                    Nullam eget nisi sapien. Nunc varius leo mauris, a ultrices felis ultrices 
+                                    id. Phasellus in tincidunt ex, a tristique... 
+                                </p>
+                                <hr />
+                                <div class="rooms">
+                                    <span>1 Quarto</span>
+                                    <span>1 Suíte</span>
+                                    <span>1 Area útil</span>
+                                    <span>1 Banheiro</span>
+                                </div>
+                                <hr />
+                                <div class="price">
+                                    <span>R$</span>
+                                    <p class="paragraphy-big">60.000</p>
+                                </div>
+                                <a href="" class="button-tercery button-4">Ver mais sobre</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="benefits-ative">
+                <div class="padding-section">
+                    <div class="container">
+                        <h2 class="title-section mb-100">COMO FUNCIONA E COMO VOCÊ PODE SE BENEFICIAR?</h2>
+                    </div>
+                    <div class="box-benefits">    
+                        <div class="group-benefits container">
+                            <img src="src/assets/img/homepage/benefits-image-1.png" alt="">
+                            <div class="description-benefits">
+                                <h3>Como usar nossa plataforma?</h3>
+                                <p class="paragraphy-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt sollicitudin dolor, in viverra massa scelerisque nec. 
+                                    <br />
+                                    <br />
+                                    Nullam eget nisi sapien. Nunc varius leo mauris, a ultrices felis ultrices id. Phasellus in tincidunt ex, a tristique 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group-benefits container">
+                            <img src="src/assets/img/homepage/benefits-image-2.png" alt="">
+                            <div class="description-benefits">
+                                <h3>Como usar nossa plataforma?</h3>
+                                <p class="paragraphy-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt sollicitudin dolor, in viverra massa scelerisque nec. 
+                                    <br />
+                                    <br />
+                                    Nullam eget nisi sapien. Nunc varius leo mauris, a ultrices felis ultrices id. Phasellus in tincidunt ex, a tristique 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group-benefits container">
+                            <img src="src/assets/img/homepage/benefits-image-3.png" alt="">
+                            <div class="description-benefits">
+                                <h3>Como usar nossa plataforma?</h3>
+                                <p class="paragraphy-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt sollicitudin dolor, in viverra massa scelerisque nec. 
+                                    <br />
+                                    <br />
+                                    Nullam eget nisi sapien. Nunc varius leo mauris, a ultrices felis ultrices id. Phasellus in tincidunt ex, a tristique 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="features-ative">
+                <div class="container padding-section">
+                    <h2 class="title-section mb-100">O que a Ative te proporciona?</h2>
+                    <div class="features-list">
+                        <div class="group-feature">
+                            <img src="src/assets/icons/chat.svg" alt="">
+                            <p class="paragraphy-2">Chat</p>
+                            <p class="paragraphy-4">Agilize a negociação sem comprometer sua privacidade. Converse em nosso ambiente seguro.</p>
+                        </div>
+                        <div class="group-feature">
+                            <img src="src/assets/icons/feedback.svg" alt="">
+                            <p class="paragraphy-2">Avaliações</p>
+                            <p class="paragraphy-4">Negocie apenas com os melhores! Nossa equipe avalia constantemente o feedback dos usuários.</p>
+                        </div>
+                        <div class="group-feature">
+                            <img src="src/assets/icons/premium.svg" alt="">
+                            <p class="paragraphy-2">Planos</p>
+                            <p class="paragraphy-4">Temos diferentes planos para melhor adequar-se às suas reais necessidades.</p>
+                        </div>
+                        <div class="group-feature">
+                            <img src="src/assets/icons/contract.svg" alt="">
+                            <p class="paragraphy-2">Contrato</p>
+                            <p class="paragraphy-4">Oferecemos um ambiente seguro para a criação de contratos e gerenciamento de assinaturas</p>
+                        </div>
+                        <div class="group-feature">
+                            <img src="src/assets/icons/properties.svg" alt="">
+                            <p class="paragraphy-2">Imóveis</p>
+                            <p class="paragraphy-4">Cadastre, busque e conheça centenas de imóveis distribuídos por todo ac Brasil.</p>
+                        </div>
+                        <div class="group-feature">
+                            <img src="src/assets/icons/secure.svg" alt="">
+                            <p class="paragraphy-2">Seguros</p>
+                            <p class="paragraphy-4">Através de nossos parceiros, é possível solicitar seguros dos mais variados tipos.</p>
+                        </div>
+                        <img src="src/assets/img/homepage/features-image.png" id="feature-image" alt="">
+                        <div class="space-for-slide"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="newsletter-ative">
+                <div class="container">
+                    <h2 class="title-section">Assine a Newsletter</h2>
+                    <p class="paragraphy-5">Seja sempre notificado a novos imóveis cadastrados!</p>
+
+                    <div class="group-input">
+                        <label for="email" class="paragraphy-4">Email:</label>
+                        <div class="send-newsletter">
+                            <input type="email" id="email" placeholder="Ex: exemplo@gmail.com"/>
+                            <button><span class="material-icons">arrow_right_alt</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="box-footer">
+                <div class="container">
+                    <article class="primary">
+                        <img src="src/assets/img/logotipo.png" alt="">
+                        <p class="paragraphy-4">Somos a melhor no ramo de imobiliário com tecnologia!</p>
+                    </article>
+                    <article class="secundary">
+                        <h5>Links rápidos</h5>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Imóveis</a></li>
+                            <li><a href="">Planos</a></li>
+                            <li><a href="">Cadastrar</a></li>
+                        </ul>
+                    </article>
+                    <article class="tercery">
+                        <h5>Contato</h5>
+                        <ul>
+                            <li><a href="">sac@ativeimoveis.com.br</a></li>
+                            <li><a href="">contato@ativeimoveis.com.br</a></li>
+                        </ul>
+                    </article>
+                    <article class="quaternary">
+                        <h5>Redes socias</h5>
+                        <div class="social-medias">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z" fill="white"/>
+                            </svg>
+                                                               
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.04004C6.5 2.04004 2 6.53004 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85004C10.44 7.34004 11.93 5.96004 14.22 5.96004C15.31 5.96004 16.45 6.15004 16.45 6.15004V8.62004H15.19C13.95 8.62004 13.56 9.39004 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5879 18.0622 20.3856 19.6099 18.5701C21.1576 16.7546 22.0054 14.4457 22 12.06C22 6.53004 17.5 2.04004 12 2.04004Z" fill="white"/>
+                            </svg>                                
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="box-information-footer">
+                <div class="container">
+                    <article>
+                        <p class="paragraphy-5">Copyright© Ative Imóveis, 2020. Todos os direitos reservados.</p>
+                    </article>
+                    <article>
+                        <ul>
+                            <li>
+                                <a href="">Informações da Empresa</a>
+                            </li>
+                            <li>
+                                <a href="">Termos</a>
+                            </li>   
+                            <li>
+                                <a href="">Privacidade</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="src/assets/vendor/jquery/jquery-min.js"></script>
+    <script src="src/assets/vendor/jquery/jquery-migrate.js"></script>
+    <script src="src/assets/vendor/slick/js/slick.js"></script>
+    <script src="src/assets/js/home.js"></script>
+    <script src="src/assets/js/navbar-fixed.js"></script>
+    <script src="src/assets/js/global.js"></script>
+</body>
+</html>

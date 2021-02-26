@@ -1,0 +1,186 @@
+hr {
+    display:none;
+}
+
+header h1.finish {
+    margin-top:40px;
+}
+
+header .box-title {
+    display:flex;
+    justify-content: space-between;
+
+    padding: 20px 30px;
+}
+
+header .box-title .box-button {
+    display:flex;
+    align-items:center;
+}
+
+header .box-title .box-button button {
+    display:flex;
+    align-items:center;
+
+    padding: 13px 20px;
+    text-transform: initial;
+
+    height:50px;
+}
+
+header .box-title .box-button button:last-child {
+    margin-left:10px;
+}
+
+header .box-title .box-button button span {
+    margin-right:10px;
+}
+
+header .box-lists {
+    margin-bottom:10px;
+}
+
+header .box-lists ul li {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0 20px;
+    align-items:center;
+
+    padding:20px 30px;
+}
+
+header .box-lists ul li:hover {
+    background:var(--color-elements-2) !important;
+}
+
+header .box-lists ul li:nth-child(odd) {
+    background:var(--color-elements-1);
+}
+
+header .box-lists ul li .code-info {
+    display: flex;
+    align-items:center;
+
+    font-weight:600;
+}
+
+header .box-lists ul li .code-info span {
+    font-size:50px;
+
+    margin-right:10px;
+
+    color:var(--color-secundary);
+}
+
+header.denounce .box-lists ul li .code-info span { 
+    color:var(--color-danger);
+}
+
+header .box-lists ul li p.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+header .view-button {
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+header .view-button button {
+    margin-left:10px;
+}
+
+@media (max-width: 795px)  {
+    header .box-title .box-button button {
+        display:flex;
+        align-items:center;
+        justify-content: center;
+
+        width:50px;
+        height:50px;
+    }
+
+    header .box-title .box-button button p {
+        display:none;
+    }
+
+    header .box-title .box-button button span {
+        margin-right:0;
+    }
+
+    header .box-lists ul li {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        grid-template-areas:
+        "code-info view-button"
+        "description description";
+
+        grid-gap:10px 0;
+    }
+
+    header .box-lists ul li .code-info {
+        grid-area: code-info;        
+    }
+
+    header .box-lists ul li p.description {
+        grid-area: description;
+    }
+    
+    header .view-button {
+        
+        grid-area: view-button;
+        
+    }
+}
+
+@media (max-width: 512px)  { 
+    header .box-lists ul li .code-info {
+        padding-bottom:15px;
+
+        border-bottom:1px solid var(--color-elements-4);
+    }
+
+    header .box-lists ul li p.description { 
+        margin:10px 0;
+    }
+
+    header .view-button {
+        display:grid;
+        grid-template-columns: 50px 1fr;
+        flex-direction: column-reverse;
+
+        padding-top:15px;
+
+        border-top:1px solid var(--color-elements-4);
+    }
+
+    header .box-title {
+        padding:15px;
+    }
+
+    header .box-lists ul li {
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-template-areas:
+        "code-info"
+        "description"
+        "view-button";
+
+        padding:10px 15px;
+
+        
+        grid-gap:0 0;
+    }
+
+}
+
+@media (max-width: 400px)  {  
+    header .box-title {
+        padding:15px;
+        font-size:12px;
+    }
+}

@@ -1,0 +1,196 @@
+nav {
+    width:100%;
+
+    z-index:1;
+    background:var(--color-elements);
+    margin-bottom:40px;
+    padding:10px 0;
+    transition: all 0.2s linear;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav.fixed {
+    position:fixed;
+    background:var(--color-elements)!important;
+    padding:0px;
+    transition: all 0.2s linear;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav.fixed ul a,
+nav.fixed .container .group-button a:nth-child(1) {
+    color:var(--color-text) !important;
+}
+
+nav .container {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+nav .container img {
+    width:110px;
+}
+
+nav .container #search_property {
+    width:100%;
+    height:45px;
+
+    padding:0 20px;
+    border-radius:30px;
+    border:1px solid var(--color-border-boxs);
+
+    box-sizing: border-box;
+    
+    display:none;
+}
+
+nav .container ul {
+    position:relative;
+    float:center;
+    display:flex;
+    list-style-type: none;
+}
+
+nav .container ul a {
+    margin:0 10px;
+
+    text-decoration:none;
+    text-transform: initial;
+
+    opacity:0.5;
+    
+    color:var(--color-text);
+}
+
+nav .container ul a.active-navlink {
+    opacity:1;
+}
+
+nav .container ul a li {
+    font-size:16px;
+}
+
+nav .container ul a:hover {
+    opacity:1;  
+} 
+
+nav .container .group-button {
+    display:flex;
+    align-items:center;
+}
+
+nav .container .group-button a {
+    color:var(--color-text-white);
+
+    text-decoration: none;
+}
+
+nav .container .group-button a:nth-child(1) {
+    color:var(--color-text);
+}
+
+nav .container .group-button .register {
+    margin-left:20px;
+}
+
+nav .container .group-button-connect {
+    display:flex;
+    align-items:center;
+}
+
+nav .container .group-button-connect span {
+    vertical-align: middle;
+
+    padding:0 10px;
+}
+
+nav .container .group-button-connect a {
+    color:var(--color-text);
+
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+nav .container .group-button-connect .perfil {
+    display:flex;
+    align-items:center;
+
+    padding:2px;
+    margin-left:10px;
+
+    height:40px;
+
+    border:1px solid var(--color-border-boxs);
+
+    border-radius:40px;
+}
+
+nav .container .group-button-connect .perfil img {
+    width:40px;
+    height:40px;
+
+    border-radius:20px;
+
+    object-fit: cover;
+}
+
+nav .container .group-button-connect .perfil span {
+    padding:8px;
+}
+
+@media (max-width:780px) {
+    nav.fixed {
+        padding:10px 0;
+
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 770px) {
+    nav .container {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "logo . nav-links buttons";
+        gap:0 20px;
+    }
+
+    nav .container img {
+        grid-area: logo;
+    }
+
+    nav .container ul {
+        grid-area: nav-links;
+    }
+
+    nav .container .group-button,
+    nav .container .group-button-connect {
+        grid-area: buttons;
+    }
+}
+
+@media (max-width: 660px) {
+    nav .container {
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+
+    nav .container img {
+        display:none;
+    }
+
+    nav .container ul,
+    nav .container .group-button,
+    nav .container .group-button-connect {
+        display:none;
+    }
+
+    nav .container #search_property {
+        display:block;
+    }
+
+}

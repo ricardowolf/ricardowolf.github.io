@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ative Imóveis</title>
+    
+    <!-- Fonts Family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="src/assets/css/normalize.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/navbar/style.css" />
+    <link rel="stylesheet" href="src/assets/css/register-form/style.css" />
+</head>
+<body>
+    <nav>
+        <div class="container container-big">
+            <img lazy="loading" src="src/assets/img/logotipo.png" alt="Logotipo | Ative Imóveis" />
+            <input type="text" id="search_property" placeholder="Procure seu imóvel por aqui!"/>
+            <ul>
+                <a href="#" class="paragraphy-4 active-navlink"><li>Home</li></a>
+                <a href="properties.html" class="paragraphy-4"><li>Imóveis</li></a>
+                <a href="#" class="paragraphy-4"><li>Planos</li></a>
+            </ul>
+            <div class="group-button">
+                <a href="#" class="button-4 login-popup">Login</a>
+                <a href="#" class="button-primary register button-4">Cadastrar</a>
+            </div>
+        </div>
+    </nav>
+    <div class="box-menus-mobile">
+        <div class="menus-mobile">
+            <ul>
+                <a href="">
+                    <li class="active">
+                        <span class="material-icons-outlined">home</span>
+                        <p class="paragraphy-6">Home</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/properties.html">
+                    <li>
+                        <span class="material-icons-outlined">business</span>
+                        <p class="paragraphy-6">Imóveis</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/plans.html">
+                    <li>
+                        <span class="material-icons-outlined">account_balance_wallet</span>
+                        <p class="paragraphy-6">Planos</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/plans.html">
+                    <li>
+                        <span class="material-icons-outlined">account_circle</span>
+                        <p class="paragraphy-6">Entrar</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <aside id="popup">
+        <div class="box-popup-login">
+            <h4>Faça seu login</h4>
+            <span class="material-icons close">close</span>
+
+            <form action="">
+                <div class="input-item">
+                    <label for="email" class="paragraphy-4">E-mail:</label>
+                    <input type="email" id="email" />
+                </div>
+                <div class="input-item">
+                    <label for="password" class="paragraphy-4">Password:</label>
+                    <input type="password" id="password" />
+                </div>
+                <a href="#" class="paragraphy-4">Esqueci minha senha</a>
+                <button class="button-primary button-4">Continuar o login</button>
+                <div class="redirect-register">
+                    <p class="paragraphy-4">Não tem conta?</p>
+                    <a class="paragraphy-4" href="/register-user-step-1.html">Fazer uma conta</a>
+                </div>
+            </form>
+        </div>
+    </aside>
+    <aside>
+        <div class="container container-step">
+            <div class="box-steps">
+                <ul class="property">
+                    <li class="">
+                        <span class="step"><p>1</p><span class="material-icons">done</span></span>
+                    </li>
+                    <li class="">
+                        <span class="step"><p>2</p> <span class="material-icons">done</span></span>
+                    </li>
+                    <li class="">
+                        <span class="step"><p>3</p> <span class="material-icons">done</span></span>   
+                    </li>
+                    <li class="">
+                        <span class="step"><p>4</p> <span class="material-icons">done</span></span>   
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <header>
+        <div class="box-form">
+            <h4>Quantos cômodos ele tem?</h4>
+            <form action="">
+                <div class="input-item">
+                    <label for="title" class="paragraphy-6">Quantidade de quarto(s):</label>
+                    <div class="group-rooms">
+                        <button class="button-tercery"><span class="material-icons">remove</span></button>
+                        <input type="text" disabled="disabled">
+                        <button class="button-tercery"><span class="material-icons">add</span></button>
+                    </div>
+                </div>
+                <div class="input-item">
+                    <label for="description" class="paragraphy-6">Quantidade de suíte(s):</label>
+                    <div class="group-rooms">
+                        <button class="button-tercery"><span class="material-icons">remove</span></button>
+                        <input type="text" disabled="disabled">
+                        <button class="button-tercery"><span class="material-icons">add</span></button>
+                    </div>
+                </div>
+                <div class="input-item">
+                    <label for="cep" class="paragraphy-6">Quantidade de Area(s) útil(eis):</label>
+                    <div class="group-rooms">
+                        <button class="button-tercery"><span class="material-icons">remove</span></button>
+                        <input type="text" disabled="disabled">
+                        <button class="button-tercery"><span class="material-icons">add</span></button>
+                    </div>
+                </div>
+                <div class="input-item">
+                    <label for="neighborhood" class="paragraphy-6">Quantidade de banheiro(s):</label>
+                    <div class="group-rooms">
+                        <button class="button-tercery"><span class="material-icons">remove</span></button>
+                        <input type="text" disabled="disabled">
+                        <button class="button-tercery"><span class="material-icons">add</span></button>
+                    </div>
+                </div>
+                <div class="input-item">
+                    <label for="neighborhood" class="paragraphy-6">Quantidade de vaga(s) de garagem:</label>
+                    <div class="group-rooms">
+                        <button class="button-tercery"><span class="material-icons">remove</span></button>
+                        <input type="text" disabled="disabled">
+                        <button class="button-tercery"><span class="material-icons">add</span></button>
+                    </div>
+                </div>
+                
+                <div class="group-button">
+                    <button class="button-secundary-outline button-4">Ir para os imóveis</button>
+                    <button class="button-secundary button-4">Continuar o cadastro</button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <script>
+        $('input[type="checkbox"]').on('change', function() {
+            $('input[type="checkbox"]').not(this).prop('checked', false);
+        });
+    </script>
+</body>

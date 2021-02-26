@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ative Imóveis</title>
+    
+    <!-- Fonts Family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Plugins Links -->
+    <link rel="stylesheet" href="src/assets/vendor/slick/css/slick.css">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="src/assets/vendor/slick/css/slick.css">
+    <link rel="stylesheet" href="src/assets/css/normalize.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/navbar/style.css" />
+    <link rel="stylesheet" href="src/assets/css/plans/style.css" />
+</head>
+<body>
+    <nav>
+        <div class="container container-big">
+            <img lazy="loading" src="src/assets/img/logotipo.png" alt="Logotipo | Ative Imóveis" />
+            <input type="text" id="search_property" placeholder="Procure seu imóvel por aqui!"/>
+            <ul>
+                <a href="#" class="paragraphy-4 active-navlink"><li>Home</li></a>
+                <a href="properties.html" class="paragraphy-4"><li>Imóveis</li></a>
+                <a href="#" class="paragraphy-4"><li>Planos</li></a>
+            </ul>
+            <div class="group-button">
+                <a href="#" class="button-4 login-popup">Login</a>
+                <a href="#" class="button-primary register button-4">Cadastrar</a>
+            </div>
+        </div>
+    </nav>
+    <div class="box-menus-mobile">
+        <div class="menus-mobile">
+            <ul>
+                <a href="">
+                    <li class="active">
+                        <span class="material-icons-outlined">home</span>
+                        <p class="paragraphy-6">Home</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/properties.html">
+                    <li>
+                        <span class="material-icons-outlined">business</span>
+                        <p class="paragraphy-6">Imóveis</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/plans.html">
+                    <li>
+                        <span class="material-icons-outlined">account_balance_wallet</span>
+                        <p class="paragraphy-6">Planos</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/plans.html">
+                    <li>
+                        <span class="material-icons-outlined">account_circle</span>
+                        <p class="paragraphy-6">Entrar</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <aside id="popup">
+        <div class="box-popup-login">
+            <h4>Faça seu login</h4>
+            <span class="material-icons close">close</span>
+
+            <form action="">
+                <div class="input-item">
+                    <label for="email" class="paragraphy-4">E-mail:</label>
+                    <input type="email" id="email" />
+                </div>
+                <div class="input-item">
+                    <label for="password" class="paragraphy-4">Password:</label>
+                    <input type="password" id="password" />
+                </div>
+                <a href="#" class="paragraphy-4">Esqueci minha senha</a>
+                <button class="button-primary button-4">Continuar o login</button>
+                <div class="redirect-register">
+                    <p class="paragraphy-4">Não tem conta?</p>
+                    <a class="paragraphy-4" href="/register-user-step-1.html">Fazer uma conta</a>
+                </div>
+            </form>
+        </div>
+    </aside>
+    <header>
+        <div class="container container-big-plans">
+            <h1 class="other-pages">Tipos de Planos</h1>
+            <div class="plans-options slide-plans">
+                <div class="box-plan">
+                    <div class="plan">
+                        <div class="title-plan">
+                            <p class="title">Plano Grátis</p>
+                            <p class="paragraphy-5">Para você começar a ser um <br> Ativer</p>
+                        </div>  
+                        <hr />                  
+                        <div class="price-plan">
+                            <p class="paragraphy-5">R$</p>
+                            <p class="paragraphy-big price">0,00</p>
+                            <p class="paragraphy-5">/mês</p>
+                        </div>
+                        <button class="button-secundary-outline button-4">Criar Conta</button>
+                        <hr />
+                        <ul>
+                            <li>5 Chats permitidos</li>
+                            <li>1 Anúncio em destaque</li>
+                            <li>1 Usuários</li>
+                            <li>
+                                Parcerias com:
+                                <ul>
+                                    <li>Proprietários</li>
+                                    <li>Corretores</li>
+                                    <li>Imobiliarias</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Anúncio:
+                                <ul>
+                                    <li>Denuncia de Anúncio Fake</li>
+                                    <li>Avaliaçao de Usuários</li>
+                                    <li>Estatística de Anúncio Cadastrados</li>
+                                    <li>Tempo ilimitado</li>
+                                </ul>
+                            </li>
+                            <li>Documentação:</li>
+                            <li>
+                                Outras Vantagens:
+                                <ul>
+                                    <li>Pesquisa de Imóveis</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="info-importants paragraphy-5">A quantidade de usuários nos planos considera 
+                        o usuário contratante no total.</p>
+                </div>
+                <div class="box-plan">
+                    <div class="plan more-sell">
+                        <div class="plan-more-sell">
+                            <p class="paragraphy-5">Plano mais vendido</p>
+                        </div>
+                        <div class="title-plan">
+                            <p class="title">Plano Normal</p>
+                            <p class="paragraphy-5">Tenha mais possibilidades de chats e muito mais</p>
+                        </div>  
+                        <hr />                  
+                        <div class="price-plan">
+                            <p class="paragraphy-5">R$</p>
+                            <p class="paragraphy-big price">119,00</p>
+                            <p class="paragraphy-5">/mês</p>
+                        </div>
+                        <button class="button-primary button-4">Contratar plano</button>
+                        <hr />
+                        <ul>
+                            <li>5 Chats permitidos</li>
+                            <li>1 Anúncio em destaque</li>
+                            <li>1 Usuários</li>
+                            <li>
+                                Parcerias com:
+                                <ul>
+                                    <li>Proprietários</li>
+                                    <li>Corretores</li>
+                                    <li>Imobiliarias</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Anúncio:
+                                <ul>
+                                    <li>Denuncia de Anúncio Fake</li>
+                                    <li>Avaliaçao de Usuários</li>
+                                    <li>Estatística de Anúncio Cadastrados</li>
+                                    <li>Tempo ilimitado</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Documentação:
+                                <ul>
+                                    <li>Modelo De Contratos Editáveis</li>
+                                    <li>Assinatura Digital Via Docusign</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Outras Vantagens:
+                                <ul>
+                                    <li>Pesquisa de Imóveis</li>
+                                </ul>
+                            </li>
+                        </ul>                  
+                    </div>
+                    <p class="info-importants paragraphy-5">A quantidade de usuários nos planos considera 
+                        o usuário contratante no total.</p>
+                </div>
+                <div class="box-plan">
+                    <div class="plan">
+                        <div class="title-plan">
+                            <p class="title">Plano Premium</p>
+                            <p class="paragraphy-5">Bem visto pelos outros Ativers 
+                                e com todas as funcionadalides</p>
+                        </div>
+                        <hr />                  
+                        <div class="price-plan">
+                            <p class="paragraphy-5">R$</p>
+                            <p class="paragraphy-big price">139,00</p>
+                            <p class="paragraphy-5">/mês</p>
+                        </div>
+                        <button class="button-secundary button-4">Contratar plano</button>
+                        <hr />
+                        <ul>
+                            <li>5 Chats permitidos</li>
+                            <li>1 Anúncio em destaque</li>
+                            <li>1 Usuários</li>
+                            <li>
+                                Parcerias com:
+                                <ul>
+                                    <li>Proprietários</li>
+                                    <li>Corretores</li>
+                                    <li>Imobiliarias</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Anúncio:
+                                <ul>
+                                    <li>Denuncia de Anúncio Fake</li>
+                                    <li>Avaliaçao de Usuários</li>
+                                    <li>Estatística de Anúncio Cadastrados</li>
+                                    <li>Tempo ilimitado</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Documentação:
+                                <ul>
+                                    <li>Modelo De Contratos Editáveis</li>
+                                    <li>Assinatura Digital Via Docusign</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Outras Vantagens:
+                                <ul>
+                                    <li>Pesquisa de Imóveis</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="info-importants paragraphy-5">A quantidade de usuários nos planos considera 
+                        o usuário contratante no total.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- JS Links -->
+    <script src="src/assets/vendor/jquery/jquery-min.js"></script>
+    <script src="src/assets/vendor/jquery/jquery-migrate.js"></script>
+    <script src="src/assets/vendor/slick/js/slick.js"></script>
+    <script src="src/assets/js/plans.js"></script>
+</body>
+</html>

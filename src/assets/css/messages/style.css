@@ -1,0 +1,421 @@
+h1.other-pages {
+    margin-bottom:20px;
+} 
+
+.box-messages {
+    height:667px;
+
+    display:flex;
+    
+    border-radius: 20px;
+    border:1px solid var(--color-border-boxs);
+
+    background:var(--color-boxs);
+
+    overflow: hidden;
+}
+
+.box-messages .users {
+    width:100%;
+    max-width:265px;
+
+    border-right:0.5px solid var(--color-border-boxs);
+}
+
+.box-messages .users.view { 
+    display:block !important;
+
+    max-width:100%;
+}
+
+.box-messages .users.view + .messages {
+    display:none;
+}
+
+.box-messages .users .box-information {
+    height:54px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 20px;
+
+    border-bottom:1px solid var(--color-border-boxs);
+}
+
+.box-messages .users .list-users {
+    width:100%;
+}
+
+.box-messages .users .list-users ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.box-messages .users .list-users ul li a {
+    position:relative;
+    display:flex;
+    align-items:center;
+    
+    height:70px;
+
+    padding:0px 20px;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-weight:400;
+
+    color:var(--color-text);
+}
+
+.box-messages .users .list-users ul li a:hover {
+    background:var(--color-elements-2);
+}
+
+.box-messages .users .list-users ul li a img {
+    width:50px;
+
+    margin-right:10px;
+    
+    border-radius:100%;
+}
+
+.box-messages .users .list-users ul li a .information-user .work {
+    color:var(--color-text-light-4);
+}
+
+.box-messages .users .list-users ul li a .quantity-messages {
+    width:18px;
+    height:18px;
+    position:absolute;
+
+    right:6px;
+    top:50%;
+    transform:translateY(-50%);
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+    font-weight:600;    
+
+    color:var(--color-text-white);
+    background:var(--color-success);
+
+    border-radius:9px;
+}
+
+@media (max-width:970px) {
+    .box-messages .users {
+        display:none;
+    }
+}
+
+.box-messages .messages {
+    width:100%;
+
+    position:relative;
+}
+
+.box-messages .messages .box-information {
+    height:54px;
+    
+    display:flex;
+    align-items:center;     
+    justify-content: space-between;
+    
+    padding:0 20px;
+    
+    border-bottom:1px solid var(--color-border-boxs);
+}
+
+.box-messages .messages .box-information .back-step,
+.box-messages .box-infos-advertiser .box-information .back-step { 
+    display:none;
+
+    width:30px;
+    height:30px;
+
+    border-radius:15px;
+    margin-right:10px;
+
+    cursor:pointer;
+}
+
+.box-messages .messages .box-information .back-step:hover,
+.box-messages .box-infos-advertiser .box-information .back-step:hover {  
+    background:var(--color-elements-2);
+}
+
+.box-messages .messages .box-information .box-details-advertiser { 
+    display:flex;
+    align-items:center;
+}
+
+.box-messages .messages .box-information .box-details-advertiser a {
+    display:flex; 
+    align-items:center;
+
+    text-decoration: none;
+    text-transform: initial;
+
+    color:var(--color-text);
+}
+
+.box-messages .messages .box-information .info-button { 
+    display:flex;    
+    align-items:center;
+
+    cursor:pointer;
+}
+
+.box-messages .messages .box-information .info-button p {
+    margin-right:8px;
+}
+
+.box-messages .messages .box-information .info-button span {
+    font-size:16px;
+}
+
+.box-messages .messages .box-information img {
+    width:30px;
+    height:30px;
+
+    margin-right:10px;
+
+    border-radius:100%;
+}
+
+.box-messages .messages .box-information .online {
+    width:10px;
+    height:10px;
+
+    border-radius:100%;
+
+    background:var(--color-online);
+    margin-left:10px;
+}
+
+.box-messages .messages .view-property {
+    border-bottom:1px solid var(--color-border-boxs);
+}
+
+.box-messages .messages .view-property a,
+.box-messages .messages .view-property .box-view-property {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.box-messages .messages .view-property a {
+    display:flex;
+    justify-content: space-between; 
+    align-items:center;
+
+    padding:5px 20px;
+
+    text-decoration: none !important;
+    text-transform: capitalize !important;
+
+    color:var(--color-text) !important;
+}
+
+.box-messages .messages .view-property a:hover {
+    background:var(--color-elements-2);
+}
+
+.box-messages .messages .view-property a .box-view-property img {
+    width:60px;
+    height:50px;
+
+    margin-right:10px;
+    border-radius:4px;
+}
+
+.box-messages .messages .view-property a .box-view-property .info-view-property p.title-property {
+    font-weight:600;
+}
+
+.box-messages .messages .list-messages {
+    padding:0 20px;
+}
+
+.box-messages .messages .list-messages ul {
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.box-messages .messages .list-messages ul li {
+    max-width:550px;
+    
+    position:relative;
+    background:var(--color-message-received);
+
+    padding:8px 60px 8px 10px;
+
+    margin-bottom:10px;
+    margin-right:10px;
+
+    border-radius: 16px 8px 8px 0px;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.box-messages .messages .list-messages ul li.my-messages {
+    background:var(--color-message-send);
+    align-self:flex-end;
+
+    border-radius: 8px 16px 0px 8px;
+    margin-right:0px;
+    margin-left:10px;
+}
+
+.box-messages .messages .list-messages ul li span {
+    position:absolute;
+    bottom:4px;
+    right:9px;
+}
+
+.box-messages .messages .box-fixed-message {
+    width:100%;
+    position:absolute;
+    bottom:0;
+}
+
+.box-messages .messages .box-send-message {
+    display:grid;
+    grid-template-columns: 45px 1fr 45px;
+    grid-gap:10px;
+
+    padding:10px 20px;
+
+    background:var(--color-elements-1);
+}
+
+.box-messages .messages .box-send-message button {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+    width:45px;
+    height:45px;
+
+    border-radius:100%;
+
+    border:none;
+    background:var(--color-elements);
+
+    outline:none;
+}
+
+.box-messages .messages .box-send-message button:active {
+    transform:scale(0.96);
+
+}
+
+.box-messages .messages .box-send-message button.button-send-message {
+    background:var(--color-primary);
+
+    color:var(--color-text-white);
+}
+
+.box-messages .messages .box-send-message button.button-send-message span {
+    font-size:18px;
+}
+
+.box-messages .messages .box-send-message input {
+    border-radius:26px;
+    padding:0 20px;
+    
+    border:none;
+    background:var(--color-elements);
+
+    outline:none;
+
+    transition:box-shadow 0.2s linear;
+}
+
+.box-messages .messages .box-send-message input:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width:970px) {
+    .box-messages.view-infos-advertiser .messages {
+        display:none;
+    }
+
+    .box-messages .messages .box-information .back-step,
+    .box-messages .box-infos-advertiser .box-information .back-step {
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    
+    .box-messages .messages .box-information .info-button p {
+        display:none;
+    }
+
+    .box-messages .messages .box-information .info-button span {
+        font-size:24px;
+    }
+}
+
+.box-messages .box-infos-advertiser {
+    display:none;
+    width:100%;
+    max-width:250px;
+
+    border-left:1px solid var(--color-border-boxs);
+
+    transition:display 0.2s linear;
+}
+
+.box-messages.view-infos-advertiser .box-infos-advertiser {
+    display:block;
+}
+
+.box-messages.view-infos-advertiser .box-infos-advertiser .box-information {
+    height:54px;
+    display:flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    border-bottom:1px solid var(--color-border-boxs);
+}
+
+.box-messages .box-infos-advertiser .infos-advertiser {
+    padding:13px 20px 0 20px;
+}
+
+.box-messages .box-infos-advertiser .infos-advertiser img {
+    width:100px;
+    height:100px;
+
+    border-radius:200px;
+}
+
+.box-messages .list-property ul {
+    padding-left:20px;
+}
+
+.box-messages .list-property ul.slide-messages li {
+    width:200px;
+    margin-right:10px;
+}
+
+.box-messages .list-property ul.slide-messages li .image-property {
+    height:150px;
+}
+
+@media (max-width:960px) {
+    .box-messages .box-infos-advertiser.view,
+    .box-messages .box-infos-advertiser {
+        max-width:100%;
+    }
+
+    .box-messages .box-infos-advertiser {
+        border-left:0;
+    }
+}

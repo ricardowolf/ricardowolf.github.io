@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ative Imóveis</title>
+    
+    <!-- Fonts Family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Plugins Links -->
+    <link rel="stylesheet" href="src/assets/vendor/slick/css/slick.css">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="src/assets/css/normalize.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/navbar/style.css" />
+    <link rel="stylesheet" href="src/assets/css/product-template/style.css" />
+</head>
+<body>
+    <nav class="product-template-page">
+        <div class="container container-big">
+            <img lazy="loading" src="src/assets/img/logotipo.png" alt="Logotipo | Ative Imóveis" />
+            <input type="text" id="search_property" placeholder="Procure seu imóvel por aqui!"/>
+            <ul>
+                <a href="#" class="paragraphy-4 active-navlink"><li>Home</li></a>
+                <a href="properties.html" class="paragraphy-4"><li>Imóveis</li></a>
+                <a href="#" class="paragraphy-4"><li>Planos</li></a>
+            </ul>
+            <div class="group-button-connect">
+                <a href="">
+                    <span class="material-icons">search</span>
+                </a>
+                <a href="/messages.html">
+                    <span class="material-icons">message</span>
+                </a>
+                <div class="perfil dropbox-filter">
+                    <img src="src/assets/img/temp/user-perfil.png" alt="">
+                    <span class="material-icons chevron-icon">keyboard_arrow_down</span>
+                    <div class="dropbox-list">
+                        <ul>
+                            <a href="/register-property-step-1.html">
+                                <li>
+                                    <p class="paragraphy-5">Cadastrar Imóveis</p>
+                                </li>
+                            </a>
+                            <a href="/plans.html">
+                                <li>
+                                    <p class="paragraphy-5">Planos</p>
+                                </li>
+                            </a>
+                            <a href="/help.html">
+                                <li>
+                                    <p class="paragraphy-5">Ajuda</p>
+                                </li>
+                            </a>
+                            <hr />
+                            <a href="/perfil-user.html">
+                                <li>
+                                    <p class="paragraphy-5">Meu Perfil</p>
+                                </li>
+                            </a>
+                            <hr />
+                            <a href="/denounce.html">
+                                <li>
+                                    <p class="paragraphy-5">Denunciar</p>
+                                </li>
+                            </a>
+                            <a href="/leave">
+                                <li>
+                                    <p class="paragraphy-5">Sair da conta</p>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="box-menus-mobile">
+        <div class="menus-mobile">
+            <ul>
+                <a href="/">
+                    <li>
+                        <span class="material-icons-outlined">home</span>
+                        <p class="paragraphy-6">Home</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/properties.html">
+                    <li>
+                        <span class="material-icons-outlined">business</span>
+                        <p class="paragraphy-6">Imóveis</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/plans.html">
+                    <li>
+                        <span class="material-icons-outlined">account_balance_wallet</span>
+                        <p class="paragraphy-6">Planos</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/perfil-user.html">
+                    <li>
+                        <span class="material-icons-outlined">account_circle</span>
+                        <p class="paragraphy-6">Perfil</p>
+                    </li>
+                </a>
+                <a href="http://127.0.0.1:5500/messages.html">
+                    <li>
+                        <span class="material-icons-outlined">message</span>
+                        <p class="paragraphy-6">Mensages</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    
+    <section class="slide-image-home">
+        <div class="container container-big">
+            <div class=" slide-property-images slide-product-template">
+                <div class="item-slide">
+                    <img src="src/assets/img/temp/image-property-slide-1.png" alt="">
+                </div>
+                <div class="item-slide">
+                    <img src="src/assets/img/temp/image-property-slide-2.png" alt="">
+                </div>
+                <div class="item-slide">
+                    <img src="src/assets/img/temp/image-property-slide-3.png" alt="">
+                </div>
+                <div class="item-slide">
+                    <img src="src/assets/img/temp/image-property-slide-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="infos-property">
+        <div class="container container-big information-more-price">
+            <div class="box-property-page information-property">
+                <header class="box-style">
+                    <div class="property-type-tags">
+                        <a href="#" class="paragraphy-4">Apartamento</a>
+                    </div>
+                    <h1 class="page-property">Apartamento vila ema</h1>
+                    <div class="location-property">
+                        <p class="paragraphy-4">São Sebastião, São Paulo, Brasil</p>
+                    </div>
+                    <hr />
+                    <a href="">
+                        <div class="perfil-advertiser">
+                            <div class="box-perfil">
+                                <img src="src/assets/img/temp/user-perfil.png" alt="">
+                                <div class="group-description">
+                                    <p class="name paragraphy-4">Dejean Carvalho</p>
+                                    <div class="group-perfil">
+                                        <p class="work paragraphy-6">Proprietário</p>
+                                        <div class="stars">
+                                            <span class="material-icons">star</span>
+                                            <span class="material-icons">star</span>
+                                            <span class="material-icons">star_half</span>
+                                            <span class="material-icons">star_border</span>
+                                            <span class="material-icons">star_border</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <button class="button-tercery button-5">Mais imóveis do anunciante</button> -->
+                            <span class="material-icons go-perfil">chevron_right</span>
+                        </div>
+                    </a>
+                    <hr />
+                    <div class="rooms-quantity">
+                        <p class="paragraphy-6 sub-headline">Quantidade de cômodos:</p>
+                        <div class="list-rooms">
+                            <span>1 Quarto</span>
+                            <span>1 Suíte</span>
+                            <span>1 Area útil</span>
+                            <span>1 Banheiro</span>
+                            <span>2 Vagas de Garagem</span>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="description-property">
+                        <p class="paragraphy-6 sub-headline">Descrição do imóvel:</p>
+                        <p class="paragraphy-4 description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In metus nulla, suscipit nec eleifend 
+                            non, blandit ut sapien. In a felis tincidunt, sollicitudin arcu at, malesuada urna. 
+                            Phasellus sed consectetur lectus. Pellentesque eget massa suscipit, facilisis sapien ut, 
+                            tempus libero. Donec euismod pretium blandit. Curabitur eget felis a nisl gravida molestie 
+                            ut non metus. 
+                        </p>
+                        <p class="paragraphy-6 view-more">Mostrar mais</p>
+                    </div>
+                    <hr />
+                    <div class="google-maps">
+                        <p class="paragraphy-6 sub-headline">Visualização pelo Google Maps:</p>
+                        <img src="src/assets/img/temp/gogle-maps.png" alt="">
+                    </div>
+                </header>
+            </div>
+            <div class="box-property-page price-property">
+                <div class="box-aside">
+                    <aside class="box-style">
+                        <div class="information-price">
+                            <p class="paragraphy-6 sub-headline">Valor do imóvel:</p>
+                            <div class="price">
+                                <span>R$</span>
+                                <p class="paragraphy-big">60.000</p>
+                                <span>/mês</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <p class="paragraphy-5 sub-headline">Entre em contato: <strong>(2 Chats restantes)</strong></p>
+                        <button class="button-primary button-4">Conversar com Anunciante</button>
+                        <p class="paragraphy-5">Com a Ative Imóvel juntamos você e o proprietário 
+                            em uma conversa privada e criptografada.</p>
+                    </aside>  
+                    <a href="#" class="box-denounce">
+                        <span class="material-icons">info</span>
+                        <p class="paragraphy-4">Quero denunciar esse anuncio</p>
+                    </a>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="properties-advertiser">
+        <div class="container container-big">
+            <div class="property-advertiser">
+                <div class="box-style">
+                    <h4>Mais imóveis de Dejean Carvalho:</h4>
+                    <div class="list-property">
+
+                        <ul class="slide-property-advertiser">
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr />
+
+                    <h4>Imóveis similares para você:</h4>
+                    <div class="list-property">
+
+                        <ul class="slide-property-advertiser">
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="property-box">
+                                        <div class="image-property">
+                                            <img src="src/assets/img/temp/image-property.png" alt="">
+                                        </div>
+                                        <div class="description-property">
+                                            <div class="property-type-tags">
+                                                <a href="#" class="paragraphy-6">Apartamento</a>
+                                            </div>
+                                            <a href="" class="title paragraphy-4">Apartamento em vila ema</a>
+                                            <p class="description paragraphy-5">Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                                            <div class="price">
+                                                <span class="paragraphy-5">R$</span>
+                                                <p class="paragraphy-3">60.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="src/assets/vendor/jquery/jquery-min.js"></script>
+    <script src="src/assets/vendor/jquery/jquery-migrate.js"></script>
+    <script src="src/assets/vendor/slick/js/slick.js"></script>
+    <script src="src/assets/js/product-template.js"></script>
+    <script src="src/assets/js/navbar-fixed.js"></script>
+    <script src="src/assets/js/global.js"></script>
+</body>
